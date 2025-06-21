@@ -7,7 +7,7 @@ cd bsdpkgs/nixos
 nix-build -A config.system.build.isoImage -I nixos-config=modules/installer/cd-dvd/installation-cd-minimal.nix default.nix
 ```
 ## Troubleshooting
-- [ ] Server failures and general internet instability can happen while you are bootstrapping Nix from source.
+- [ ] Server failures and general internet instability happen while you are bootstrapping
 - [ ] Some servers don't always respond
-- [x] Some dependencies are better off not built in parallel.
-- [ ] 
+- [ ] Some dependencies are better off not built in parallel
+- [x] Report bugs to [https://github.com/BasedLinux/bsdpkgs](basedlinux.org)
