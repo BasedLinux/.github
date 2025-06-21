@@ -12,5 +12,5 @@ Server failures and general internet instability can happen while you are bootst
 `nix-build` can be restricted to a number of threads with the -j flag. So, you might find that running this in a loop is helpful:
 
 ```sh
-while true; do nix-build -j 1 -A config.system.build.isoImage -I nixos-config=modules/installer/cd-dvd/installation-cd-minimal.nix default.nix; nix-build -A config.system.build.isoImage -I nixos-config=modules/installer/cd-dvd/installation-cd-minimal.nix default.nix; done
+while true; do nix-build -j 1 -A config.system.build.isoImage -I nixos-config=modules/installer/cd-dvd/installation-cd-minimal.nix default.nix; sleep 60; nix-build -A config.system.build.isoImage -I nixos-config=modules/installer/cd-dvd/installation-cd-minimal.nix default.nix; sleep 60; done
 ```
