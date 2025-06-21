@@ -9,4 +9,4 @@ nix-build -j $(nproc) -A config.system.build.isoImage -I nixos-config=modules/in
 ## Troubleshooting
 - [ ] Server failures and general internet instability happen while you are bootstrapping
 - [ ] Some dependencies are better off not built in parallel
-- [x] Report bugs to [https://github.com/BasedLinux/bsdpkgs](basedlinux.org)
+- [x] Report bugs to (basedlinux.org)[https://github.com/BasedLinux/bsdpkgs]
